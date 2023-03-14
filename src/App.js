@@ -3,26 +3,18 @@ import './App.css';
 import { Button, Space } from 'antd';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {Home} from './pages/Home';
-import {Thank} from './pages/thank';
+import {ThankYouPage} from './pages/ThankYouPage';
 import React from "react";
 function App() {
 
     const router = createBrowserRouter([
         {
             path: "/",
-            element: (
-                <div>
-                    <h1>Hello World</h1>
-                </div>
-            ),
-        },
-        {
-            path: "dupa",
             element: <Home/>,
         },
         {
             path: "Thanksyou",
-            element: <Thank/>,
+            element: <ThankYouPage/>,
         },
     ]);
 
