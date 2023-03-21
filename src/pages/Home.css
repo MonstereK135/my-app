@@ -3,7 +3,9 @@
     justify-content: center;
     align-items: center;
 }
-.plamka-1 {
+.Home-plamka {
+    top: 8px;
+    left: 16px;
     position: fixed;
     display: flex;
     justify-content: center;

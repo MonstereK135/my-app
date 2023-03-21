@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import plamka from './Plamka1.png';
 import './App.css';
 import { Button, Space } from 'antd';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
@@ -22,8 +23,7 @@ function App() {
       <RouterProvider router={router} >
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-           <img src={}/>
+          <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hello World !!!!!!!!!!!!!
         </p>
@@ -33,6 +33,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
+            <img src={plamka} className="App-plamka" alt="plamka" />
+
         </a>
       </header>
       <Button type="dashed">przejdz dalej</Button>
