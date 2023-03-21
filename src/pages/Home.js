@@ -1,5 +1,6 @@
 import logo from './logo.png';
-import plamka from './plamka.png';
+import plama from './plama.png';
+import plama2 from './plama2.png';
 import React from 'react';
 import './Home.css';
 
@@ -7,13 +8,11 @@ import './Home.css';
 
 export const Home = () => {
     return <div className="Home-logo">
-        <img src={logo}/>
-    </div>
-    }
-    <div className={"Home-plamka"}>
-        <img src={plamka}/>
-    </div>
 
+        <img src={plama}/>
+
+   </div>
+}
 
 
 
