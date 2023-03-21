@@ -1,13 +1,16 @@
 .Home-logo {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin: 50px ;
 }
-.Home-plamka {
-    top: 8px;
-    left: 16px;
+.plama2 {
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    right: 0;
+    bottom: 0;
+}
+.plama  {
+    position: fixed;
+    left: 0;
+    top: 0;
+
 }
