@@ -13,5 +13,60 @@
     left: 0;
     top: 0;
     z-index: -1;
+}
+.opinion {
+    position: fixed;
+    bottom: 400px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.email {
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    bottom: 200px;
 
+    align-items: center;
+}
+.input {
+    margin-left: 15px;
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+}
+.buttom {
+    position: fixed;
+    font-size: 25px;
+    width: 361px;
+    height: 55px;
+    color: #ffffff;
+    background-color: #022B3A;
+    display: flex;
+    justify-content: center;
+    margin: 15px ;
+    bottom: 43px;
+}
+.p {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+.checkbox {
+
+    color: #022B3A;
+    position: fixed;
+    display: flex;
+    margin-left: 17px;
+    bottom: 120px;
+    font-size: calc(8px + 1vmin);
+}
+.rate {
+
+    margin-left: 17px;
+    position: fixed;
+    bottom: 300px;
 }
