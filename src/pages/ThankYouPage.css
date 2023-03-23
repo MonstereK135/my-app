@@ -1,14 +1,16 @@
 .Home-logo {
     display: flex;
     justify-content: center;
-    margin: 50px ;
+    margin: 50px;
 }
+
 .plama2 {
     position: fixed;
     right: 0;
     bottom: 0;
 }
-.plama  {
+
+.plama {
     position: fixed;
     left: 0;
     top: 0;
