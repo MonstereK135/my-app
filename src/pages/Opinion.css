@@ -1,0 +1,77 @@
+.plama2 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.plama {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.frame1 {
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    top: 150px;
+    margin: 17px;
+    height: 200px;
+    width: 360px;
+}
+.frame2 {
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    bottom: 250px;
+    margin: 17px;
+    height: 200px;
+    width: 360px;
+}
+.frame3 {
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    bottom: 35px;
+    margin: 17px;
+    height: 200px;
+    width: 360px;
+}
+.p6 {
+    position: fixed;
+    top: 145px;
+    margin: 25px;
+    font-size: 16px;
+    color: #6D6D71;
+}
+.p7 {
+    position: fixed;
+    bottom: 415px;
+    margin: 25px;
+    font-size: 16px;
+    color: #6D6D71;
+}
+.p8 {
+    position: fixed;
+    bottom: 200px;
+    margin: 25px;
+    font-size: 16px;
+    color: #6D6D71;
+}
+.p9 {
+    position: fixed;
+    bottom: 90px;
+    margin: 25px;
+    font-size: 16px;
+}
+.p5 {
+    align-items: center;
+    position: fixed;
+    font-size: 40px;
+    top: 90px;
+    margin: 17px;
+}

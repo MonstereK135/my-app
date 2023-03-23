@@ -5,6 +5,7 @@ import {Button, Space} from 'antd';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {Home} from './pages/Home';
 import {ThankYouPage} from './pages/ThankYouPage';
+import {Opinion} from "./pages/Opinion";
 import React from "react";
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
         {
             path: "Thankyou",
             element: <ThankYouPage/>,
+        },
+        {
+            path: "Opinion",
+            element: <Opinion/>
         },
     ]);
 
