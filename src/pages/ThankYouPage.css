@@ -1,18 +1,42 @@
-.Home-logo {
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-}
-
 .plama2 {
     position: fixed;
     right: 0;
     bottom: 0;
 }
-
 .plama {
     position: fixed;
     left: 0;
     top: 0;
     z-index: -1;
+}
+.serce {
+    position: fixed;
+    justify-content: center;
+    margin: 90px;
+    top: 35px;
+    align-items: center;
+}
+.p {
+    align-items: center;
+    position: fixed;
+    color: #EA4444;
+    font-size: 40px;
+    top: 250px;
+    margin: 88px;
+}
+.p1 {
+    position: fixed;
+    font-size: 23px;
+    margin: 50px;
+    top: 350px;
+    display: flex;
+    justify-content: center;
+}
+.p2 {
+    position: fixed;
+    display: flex;
+    margin: 5px;
+    bottom: 150px;
+    color: #6E6E6E;
+
 }
