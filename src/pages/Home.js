@@ -15,7 +15,7 @@ export const Home = () => {
         <img className="plama" src={plama}/>
         <div className="Home-logo">
             <img className="company-logo" src={logo}/>
-            <div>
+            <div className="wszystko">
                 <p className="miejsce-na-opinie">To jest miejsce w którym możesz zostawić swoją opinię i nas ocenić</p>
                 <TextArea
                     classname="area-opinia"
@@ -25,7 +25,38 @@ export const Home = () => {
                     onChange={() => console.log('test')}
                     placeholder="Opinia.."
                 />
+                <Rate
+
+                    style={{fontSize: 35}}
+                    allowHalf
+                    tooltips={["źle", "słabo", "średnio", "dobrze", "bardzo dobrze"]}
+                    className="rate"
+                    Showcopywriting={1}/>
+               {/* <p className="Ocena">Ocena</p>*/}
+                <p className="tAdres-email">Adres email</p>
+                <Form.Item
+                    className="email"
+                    rules={[{type: 'email'}]}>
+                    <Input
+                        className="input"
+                        placeholder="Email"
+                        style={{size: 5, height: 50, width: "100%"}}
+                    />
+                </Form.Item>
+                <p className="tAdres-e-wymagany">Adres e-mail nie jest wymagany</p>
+                <Checkbox
+                    className="checkbox"
+                >Kontynuując, wyrażasz zgodę na warunki opisane w dokumencie Warunki korzystania z serwisu i potwierdzasz
+                    zapoznanie się z dokumentem Polityka prywatności
+                </Checkbox>
+                <Button
+                    color="#022B3A"
+                    className="buttom"
+                    type="primary"
+                    style={{width: "100%"}}
+                >Wyślij</Button>
             </div>
+
         </div>
   {/*      <Form.Item
             className="email"
