@@ -10,9 +10,9 @@ export const ThankYouPage = () => {
         <img className="serce" src={serce}/>
         <img className="plama" src={plama}/>
         <img className="plama2" src={plama2}/>
-        <p className="p"> Dziękujemy!!</p>
-        <p className="p1">Twoja opinia została wysłana </p>
-        <p className="p2"> Istnieje możliwość, że wkrótce skontaktujemy się z Tobą drogą mailową,
+        <p className="Dziekujemy"> Dziękujemy!!</p>
+        <p className="twoja-opinia">Twoja opinia została wysłana </p>
+        <p className="mozliwosc"> Istnieje możliwość, że wkrótce skontaktujemy się z Tobą drogą mailową,
             aby poinformować Cię o nadchodzących promocjach.</p>
 
     </div>

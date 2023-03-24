@@ -14,17 +14,20 @@ export const Home = () => {
         <img className="plama2" src={plama2}/>
         <img className="plama" src={plama}/>
         <div className="Home-logo">
-            <img src={logo}/>
-            <TextArea
-                className="opinion"
-                showCount
-                maxLength={120}
-                style={{height: 140, marginBottom: 20, width: 358}}
-                onChange={() => console.log('test')}
-                placeholder="Opinia.."
-            />
+            <img className="company-logo" src={logo}/>
+            <div>
+                <p className="miejsce-na-opinie">To jest miejsce w którym możesz zostawić swoją opinię i nas ocenić</p>
+                <TextArea
+                    classname="area-opinia"
+                    showCount
+                    maxLength={120}
+                    style={{height: 140, marginBottom: 20,width: "100%" }}
+                    onChange={() => console.log('test')}
+                    placeholder="Opinia.."
+                />
+            </div>
         </div>
-        <Form.Item
+  {/*      <Form.Item
             className="email"
             rules={[{type: 'email'}]}>
             <Input
@@ -38,10 +41,10 @@ export const Home = () => {
             className="buttom"
             type="primary"
         >Wyślij</Button>
-        <p className="p">To jest miejsce w którym możesz zostawić swoją opinię i nas ocenić</p>
-        <p className="p1">Ocena</p>
-        <p className="p2">Adres email</p>
-        <p className="p3">Adres e-mail nie jest wymagany</p>
+        <p className="miejsce-na-opinie">To jest miejsce w którym możesz zostawić swoją opinię i nas ocenić</p>
+        <p className="Ocena">Ocena</p>
+        <p className="Adres-email">Adres email</p>
+        <p className="Adres-e-wymagany">Adres e-mail nie jest wymagany</p>
         <Checkbox
             className="checkbox"
         >Kontynuując, wyrażasz zgodę na warunki opisane w dokumencie Warunki korzystania z serwisu i potwierdzasz
@@ -52,6 +55,6 @@ export const Home = () => {
             allowHalf
             tooltips={["źle", "słabo", "średnio", "dobrze", "bardzo dobrze"]}
             className="rate"
-            Showcopywriting={1}/>
+            Showcopywriting={1}/>*/}
     </div>
 }

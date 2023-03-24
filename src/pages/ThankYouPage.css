@@ -10,30 +10,26 @@
     z-index: -1;
 }
 .serce {
-    position: fixed;
     justify-content: center;
     margin: 90px;
     top: 35px;
     align-items: center;
 }
-.p {
+.Dziekujemy {
     align-items: center;
-    position: fixed;
     color: #EA4444;
     font-size: 40px;
     top: 250px;
     margin: 88px;
 }
-.p1 {
-    position: fixed;
+.twoja-opinia {
     font-size: 23px;
     margin: 50px;
     top: 350px;
     display: flex;
     justify-content: center;
 }
-.p2 {
-    position: fixed;
+.mozliwosc {
     display: flex;
     margin: 5px;
     bottom: 150px;

@@ -1,9 +1,15 @@
 .Home-logo {
+    align-items: center;
     display: flex;
     justify-content: center;
     margin: 50px;
+    flex-direction: column;
 }
-
+.company-logo {
+    margin-bottom: 40px;
+}
+.area-opinia {
+}
 .plama2 {
     position: fixed;
     right: 0;
@@ -17,16 +23,7 @@
     z-index: -1;
 }
 
-.opinion {
-    position: fixed;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    bottom: 415px;
-}
-
 .email {
-    position: fixed;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -38,7 +35,6 @@
 .input {
     font-size: 16px;
     margin-left: 15px;
-    position: fixed;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -46,7 +42,6 @@
 }
 
 .buttom {
-    position: fixed;
     font-size: 25px;
     width: 361px;
     height: 55px;
@@ -58,34 +53,26 @@
     bottom: 43px;
 }
 
-.p {
-    justify-content: center;
-    position: fixed;
-    display: flex;
+.miejsce-na-opinie {
 
-    top: 215px;
-    margin-left: 19px;
 }
 
-.p1 {
+.Ocena {
     justify-content: center;
-    position: fixed;
     display: flex;
     text-align: center;
     bottom: 350px;
     margin-left: 18px;
 }
 
-.p2 {
-    position: fixed;
+.Adres-email {
     display: flex;
     text-align: center;
     bottom: 278px;
     margin-left: 18px;
 }
 
-.p3 {
-    position: fixed;
+.Adres-e-wymagany {
     display: flex;
     text-align: center;
     bottom: 185px;
@@ -94,7 +81,6 @@
 }
 
 .checkbox {
-    position: fixed;
     display: flex;
     margin-left: 17px;
     bottom: 130px;
@@ -103,6 +89,5 @@
 
 .rate {
     margin-left: 85px;
-    position: fixed;
     bottom: 360px;
 }

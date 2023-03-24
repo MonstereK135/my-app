@@ -12,7 +12,6 @@
     z-index: -1;
 }
 .frame1 {
-    position: fixed;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -22,7 +21,6 @@
     width: 360px;
 }
 .frame2 {
-    position: fixed;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -32,7 +30,6 @@
     width: 360px;
 }
 .frame3 {
-    position: fixed;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -41,36 +38,31 @@
     height: 200px;
     width: 360px;
 }
-.p6 {
-    position: fixed;
+.data1 {
     top: 145px;
     margin: 25px;
     font-size: 16px;
     color: #6D6D71;
 }
-.p7 {
-    position: fixed;
+.data2 {
     bottom: 415px;
     margin: 25px;
     font-size: 16px;
     color: #6D6D71;
 }
-.p8 {
-    position: fixed;
+.data3 {
     bottom: 200px;
     margin: 25px;
     font-size: 16px;
     color: #6D6D71;
 }
-.p9 {
-    position: fixed;
+.tekst {
     bottom: 90px;
     margin: 25px;
     font-size: 16px;
 }
-.p5 {
+.Opinie {
     align-items: center;
-    position: fixed;
     font-size: 40px;
     top: 90px;
     margin: 17px;

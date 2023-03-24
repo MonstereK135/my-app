@@ -11,11 +11,11 @@ export const Opinion = () => {
         <img className="frame3" src={frame1}/>
         <img className="plama2" src={plama2}/>
         <img className="plama" src={plama}/>
-        <p className="p5" >Opinie</p>
-        <p className="p6" >31.12.2012</p>
-        <p className="p7" >31.12.2012</p>
-        <p className="p8" >31.12.2012</p>
-        <p className="p9" > Lorem ipsum dolor sit amet consectetur. Eleifend id condimentum sed iaculis hendrerit eu quam. Condimentum egestas tortor tincidunt pretium gravida a. Laoreet amet nec ut amet ornare id feugiat. Elementum rhoncus ac dictum.</p>
+        <p className="Opinie" >Opinie</p>
+        <p className="data1" >31.12.2012</p>
+        <p className="data2" >31.12.2012</p>
+        <p className="data3" >31.12.2012</p>
+        <p className="tekst" > Lorem ipsum dolor sit amet consectetur. Eleifend id condimentum sed iaculis hendrerit eu quam. Condimentum egestas tortor tincidunt pretium gravida a. Laoreet amet nec ut amet ornare id feugiat. Elementum rhoncus ac dictum.</p>
     </div>
 }
 
