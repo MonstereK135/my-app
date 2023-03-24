@@ -9,30 +9,32 @@
     top: 0;
     z-index: -1;
 }
-.serce {
-    justify-content: center;
-    margin: 90px;
-    top: 35px;
+.ThankYou-serce {
     align-items: center;
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+}
+.serce {
+    margin-top: 90px;
+
 }
 .Dziekujemy {
     align-items: center;
     color: #EA4444;
     font-size: 40px;
-    top: 250px;
-    margin: 88px;
 }
 .twoja-opinia {
     font-size: 23px;
-    margin: 50px;
-    top: 350px;
     display: flex;
     justify-content: center;
 }
 .mozliwosc {
-    display: flex;
-    margin: 5px;
-    bottom: 150px;
+    text-align: center;
+    position: fixed;
+    margin-left: 20px;
+    margin-right: 20px;
+    bottom: 100px;
     color: #6E6E6E;
 
 }

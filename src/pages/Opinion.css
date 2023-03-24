@@ -11,33 +11,16 @@
     top: 0;
     z-index: -1;
 }
-.frame1 {
-    flex-direction: column;
+.Opinion-o {
+    align-items: center;
+    gap: 20px;
     display: flex;
     justify-content: center;
-    top: 150px;
-    margin: 17px;
-    height: 200px;
-    width: 360px;
-}
-.frame2 {
+    margin-left: 20px;
+    margin-right: 20px;
     flex-direction: column;
-    display: flex;
-    justify-content: center;
-    bottom: 250px;
-    margin: 17px;
-    height: 200px;
-    width: 360px;
 }
-.frame3 {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    bottom: 35px;
-    margin: 17px;
-    height: 200px;
-    width: 360px;
-}
+
 .data1 {
     top: 145px;
     margin: 25px;
@@ -64,6 +47,7 @@
 .Opinie {
     align-items: center;
     font-size: 40px;
-    top: 90px;
-    margin: 17px;
+    top: 120px;
+    margin-bottom: 10px;
+    margin-left: 20px;
 }

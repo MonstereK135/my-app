@@ -7,13 +7,15 @@ import './ThankYouPage.css';
 
 export const ThankYouPage = () => {
     return <div>
-        <img className="serce" src={serce}/>
         <img className="plama" src={plama}/>
         <img className="plama2" src={plama2}/>
-        <p className="Dziekujemy"> Dziękujemy!!</p>
-        <p className="twoja-opinia">Twoja opinia została wysłana </p>
-        <p className="mozliwosc"> Istnieje możliwość, że wkrótce skontaktujemy się z Tobą drogą mailową,
-            aby poinformować Cię o nadchodzących promocjach.</p>
+        <div className="ThankYou-serce">
+            <img className="serce" src={serce}/>
 
+            <p className="Dziekujemy"> Dziękujemy!!</p>
+            <p className="twoja-opinia">Twoja opinia została wysłana </p>
+            <p className="mozliwosc"> Istnieje możliwość, że wkrótce skontaktujemy się z Tobą drogą mailową,
+                aby poinformować Cię o nadchodzących promocjach.</p>
+        </div>
     </div>
 }
