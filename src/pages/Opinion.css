@@ -20,18 +20,19 @@
     margin-right: 20px;
     flex-direction: column;
 }
-
+.frame1 {
+    z-index: -1;
+}
 .data1 {
-    top: 145px;
-    margin: 25px;
     font-size: 16px;
     color: #6D6D71;
+    z-index: 2;
 }
 .data2 {
-    bottom: 415px;
-    margin: 25px;
+    margin: 0;
     font-size: 16px;
     color: #6D6D71;
+    z-index: ;
 }
 .data3 {
     bottom: 200px;

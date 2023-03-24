@@ -10,6 +10,7 @@ export const Opinion = () => {
         <img className="plama" src={plama}/>
         <p className="Opinie" >Opinie</p>
         <div className="Opinion-o">
+            <p className="data2" >31.12.2012</p>
             <img className="frame1" style={{ height: 210, width: "100%" }} src={frame1}/>
             <img className="frame2" style={{ height: 210, width: "100%" }} src={frame1}/>
             <img className="frame3" style={{ height: 210, width: "100%" }} src={frame1}/>
