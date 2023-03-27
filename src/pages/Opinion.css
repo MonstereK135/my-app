@@ -23,6 +23,12 @@
 .frame1 {
     z-index: -1;
 }
+.frame2 {
+    z-index: -1;
+}
+.frame3 {
+    z-index: -1;
+}
 .data1 {
     font-size: 16px;
     color: #6D6D71;
@@ -32,7 +38,6 @@
     margin: 0;
     font-size: 16px;
     color: #6D6D71;
-    z-index: ;
 }
 .data3 {
     bottom: 200px;

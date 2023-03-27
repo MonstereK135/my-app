@@ -12,11 +12,11 @@ function App() {
 
     const router = createBrowserRouter([
         {
-            path: "/",
+            path: "/74e9d7a5-c6c1-41f2-8abf-6a0b49f14b6d",
             element: <Home/>,
         },
         {
-            path: "Thankyou",
+            path: "Thankyou/74e9d7a5-c6c1-41f2-8abf-6a0b49f14b6d",
             element: <ThankYouPage/>,
         },
         {
