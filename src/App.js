@@ -12,15 +12,15 @@ function App() {
 
     const router = createBrowserRouter([
         {
-            path: "/74e9d7a5-c6c1-41f2-8abf-6a0b49f14b6d",
+            path: "74e9d7a5-c6c1-41f2-8abf-6a0b49f14b6d",
             element: <Home/>,
         },
         {
-            path: "Thankyou/74e9d7a5-c6c1-41f2-8abf-6a0b49f14b6d",
+            path: "thank-you/74e9d7a5-c6c1-41f2-8abf-6a0b49f14b6d",
             element: <ThankYouPage/>,
         },
         {
-            path: "/opinions/74e9d7a5-c6c1-41f2-8abf-6a0b49f14b6d",
+            path: "opinions/74e9d7a5-c6c1-41f2-8abf-6a0b49f14b6d",
             element: <Opinion/>
         },
     ]);

@@ -12,15 +12,17 @@
     z-index: -1;
 }
 .Opinion-o {
-    align-items: center;
-    gap: 20px;
-    display: flex;
-    justify-content: center;
     margin-left: 20px;
     margin-right: 20px;
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
 }
-.frame1 {
+/*.frame1 {
     z-index: -1;
     position: relative;
 }
@@ -29,59 +31,52 @@
 }
 .frame3 {
     z-index: -1;
-}
+}*/
 .data1 {
-    top: 90px;
-    left: 30px;
     font-size: 16px;
-    color: #6D6D71;
     z-index: 2;
-    position: absolute;
+    color: black;
 }
 .data2 {
-    margin: 0;
+
     font-size: 16px;
     color: #6D6D71;
 }
 .data3 {
-    bottom: 200px;
-    margin: 25px;
     font-size: 16px;
     color: #6D6D71;
 }
 .tekst {
-    top: 110px;
-    margin-left: 30px;
-    margin-right: 25px;
     font-size: 16px;
-    position: absolute;
+}
+.rate-opinion{
+    flex-direction: ;
 }
 .Opinie {
     align-items: center;
     font-size: 40px;
-    top: 120px;
-    margin-bottom: 10px;
-    margin-left: 20px;
 }
 .rate2{
-    position: absolute;
-    top: 255px;
-    left: 100px;
 }
 .Ocena2 {
-    position: absolute;
-    left: 30px;
-    top: 250px;
+
 }
 .Email-opinia {
-    position: absolute;
+
     left: 30px;
-    top: 285px;
+    top: 290px;
 }
-.nazwa-email {
+/*.nazwa-email {
     position: absolute;
     left: 80px;
     top: 285px;
+    text-decoration: underline;
+    color: dodgerblue;
+}*/
+.mailto {
+
+    left: 80px;
+    top: 305px;
     text-decoration: underline;
     color: dodgerblue;
 }

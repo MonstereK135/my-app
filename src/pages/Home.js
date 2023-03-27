@@ -25,14 +25,15 @@ export const Home = () => {
                     onChange={() => console.log('test')}
                     placeholder="Opinia.."
                 />
-                <p className="Ocena">Ocena:</p>
-                <Rate
-
-                    style={{fontSize: 40}}
-                    allowHalf
-                    tooltips={["źle", "słabo", "średnio", "dobrze", "bardzo dobrze"]}
-                    className="rate"
-                    Showcopywriting={1}/>
+                <div className="wysrodkowanie">
+                    <p className="Ocena">Ocena</p>
+                    <Rate
+                        style={{fontSize: 40}}
+                        allowHalf
+                        tooltips={["źła", "słaba", "średnia", "dobra", "bardzo dobra"]}
+                        className="rate"
+                        Showcopywriting={1}/>
+                </div>
                {/* <p className="Ocena">Ocena</p>*/}
                 <p className="tAdres-email">Adres email</p>
                 <Form.Item

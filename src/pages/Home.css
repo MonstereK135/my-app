@@ -8,6 +8,11 @@
 .wszystko {
     gap: 30px;
 }
+.wysrodkowanie {
+    display: inline-flex;
+    justify-content: center;
+
+}
 .company-logo {
     margin-top: 30px;
 }
@@ -19,11 +24,11 @@
     margin: 0px;
 }
 .rate {
-    margin-left: 70px;
+    margin-left: 20px;
 }
 .Ocena {
-position: absolute;
-    top: 440px;
+    margin-top: 18px;
+    font-size: 15px;
 }
 .email {
     margin: 0px;
@@ -33,6 +38,7 @@ position: absolute;
     margin-top: 20px;
     margin-bottom: 2px;
     color: #000000;
+    font-size: 15px;
 }
 .tAdres-e-wymagany {
     margin-top: 2px;
