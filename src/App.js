@@ -20,7 +20,7 @@ function App() {
             element: <ThankYouPage/>,
         },
         {
-            path: "Opinion",
+            path: "/opinions/74e9d7a5-c6c1-41f2-8abf-6a0b49f14b6d",
             element: <Opinion/>
         },
     ]);
