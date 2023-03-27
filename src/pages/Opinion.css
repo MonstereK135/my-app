@@ -22,6 +22,7 @@
 }
 .frame1 {
     z-index: -1;
+    position: relative;
 }
 .frame2 {
     z-index: -1;
@@ -30,9 +31,12 @@
     z-index: -1;
 }
 .data1 {
+    top: 90px;
+    left: 30px;
     font-size: 16px;
     color: #6D6D71;
     z-index: 2;
+    position: absolute;
 }
 .data2 {
     margin: 0;
@@ -46,9 +50,11 @@
     color: #6D6D71;
 }
 .tekst {
-    bottom: 90px;
-    margin: 25px;
+    top: 110px;
+    margin-left: 30px;
+    margin-right: 25px;
     font-size: 16px;
+    position: absolute;
 }
 .Opinie {
     align-items: center;
@@ -56,4 +62,26 @@
     top: 120px;
     margin-bottom: 10px;
     margin-left: 20px;
+}
+.rate2{
+    position: absolute;
+    top: 255px;
+    left: 100px;
+}
+.Ocena2 {
+    position: absolute;
+    left: 30px;
+    top: 250px;
+}
+.Email-opinia {
+    position: absolute;
+    left: 30px;
+    top: 285px;
+}
+.nazwa-email {
+    position: absolute;
+    left: 80px;
+    top: 285px;
+    text-decoration: underline;
+    color: dodgerblue;
 }

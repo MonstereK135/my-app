@@ -25,9 +25,10 @@ export const Home = () => {
                     onChange={() => console.log('test')}
                     placeholder="Opinia.."
                 />
+                <p className="Ocena">Ocena:</p>
                 <Rate
 
-                    style={{fontSize: 35}}
+                    style={{fontSize: 40}}
                     allowHalf
                     tooltips={["źle", "słabo", "średnio", "dobrze", "bardzo dobrze"]}
                     className="rate"
