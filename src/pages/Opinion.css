@@ -4,7 +4,6 @@
     bottom: 0;
     z-index: -1;
 }
-
 .plama {
     position: fixed;
     left: 0;
@@ -22,57 +21,42 @@
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
 }
-/*.frame1 {
-    z-index: -1;
-    position: relative;
-}
-.frame2 {
-    z-index: -1;
-}
-.frame3 {
-    z-index: -1;
-}*/
 .data1 {
     font-size: 16px;
     z-index: 2;
     color: black;
-}
-.data2 {
-
-    font-size: 16px;
-    color: #6D6D71;
-}
-.data3 {
-    font-size: 16px;
-    color: #6D6D71;
+    margin: 0px;
 }
 .tekst {
     font-size: 16px;
+    margin-top: 1px;
+    margin-bottom: 3px;
 }
 .rate-opinion{
-    flex-direction: ;
+    display: flex;
+    flex-direction: row;
 }
 .Opinie {
     align-items: center;
     font-size: 40px;
+    margin-left: 30px;
+    margintop: 30px;
+    margin-bottom: 20px;
 }
 .rate2{
 }
 .Ocena2 {
-
+     margin: 0px;
+     margin-right: 10px;
+     margin-top: 10px;
+ }
+.wiersz-email{
+    display: flex;
+    flex-direction: row;
 }
 .Email-opinia {
-
-    left: 30px;
-    top: 290px;
+    margin-right: 15px;
 }
-/*.nazwa-email {
-    position: absolute;
-    left: 80px;
-    top: 285px;
-    text-decoration: underline;
-    color: dodgerblue;
-}*/
 .mailto {
 
     left: 80px;
@@ -80,3 +64,20 @@
     text-decoration: underline;
     color: dodgerblue;
 }
+/*
+.data2 {
+    font-size: 16px;
+    color: #6D6D71;
+}
+.data3 {
+    font-size: 16px;
+    color: #6D6D71;
+}
+*/
+/*.nazwa-email {
+    position: absolute;
+    left: 80px;
+    top: 285px;
+    text-decoration: underline;
+    color: dodgerblue;
+}*/

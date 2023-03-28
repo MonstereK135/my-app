@@ -18,18 +18,15 @@ export const Opinion = () => {
     }];
 
     return <div>
-
-
         <img className="plama2" src={plama2}/>
         <img className="plama" src={plama}/>
         <p className="Opinie" >Opinie</p>
 
-        {/*<p className="nazwa-email" > Rozowyejdnrozec135@gmail.com</p>*/}
         <div className="Opinion-o">
             <p className="data1" >31.12.2012</p>
             <p className="tekst" > Lorem ipsum dolor sit amet consectetur. Eleifend id condimentum sed iaculis hendrerit eu quam. Condimentum egestas tortor tincidunt pretium gravida a. Laoreet amet nec ut amet ornare id feugiat. Elementum rhoncus ac dictum.</p>
             <div className="rate-opinion">
-                <p className="Ocena2"> Ocena</p>
+                <p className="Ocena2" style={{height: 19, width: 46 }}> Ocena</p>
                 <Rate
                     style={{fontSize: 30}}
                     allowHalf
@@ -37,7 +34,7 @@ export const Opinion = () => {
                     className="rate2"
                     Showcopywriting={1}/>
             </div>
-            <div>
+            <div className="wiersz-email" style={{height: 40, }}>
                 <p className="Email-opinia" > Email</p>
                 <p> <a className="mailto" href="mailto:someone@example.com">Rozowyejdnrozec135@gmail.com</a></p>
             </div>
