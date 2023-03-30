@@ -1,19 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import plama2 from './plamabottom.png';
 import plama from './plamatop.png';
-import frame1 from './frame1.png';
 import './Opinion.css';
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+import { collection, getDocs } from 'firebase/firestore';
 import {Rate} from "antd";
-import { initializeApp } from 'firebase/app';
+import {db} from "./firebase";
 export const Opinion = () => {
     const [opinions,setOpinions]=useState([])
 
-    var firebaseConfig = {
-        projectId: "my-app-b2e32",
-    };
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
     useEffect(()=>{
         (async () => {
             const opinionsCol = collection(db, 'opinions');
