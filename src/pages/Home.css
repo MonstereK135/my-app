@@ -8,6 +8,12 @@
 .wszystko {
     gap: 30px;
 }
+
+.checkbox-error .ant-checkbox .ant-checkbox-inner {
+    border-color: red;
+
+}
+
 .wysrodkowanie {
     display: inline-flex;
     justify-content: center;

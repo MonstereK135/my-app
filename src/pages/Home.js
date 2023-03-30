@@ -1,21 +1,24 @@
-import logo from './logoo.png';
-import plama2 from './plamabottom.png';
-import plama from './plamatop.png';
-import React, {useState} from 'react';
-import {Rate} from 'antd';
+import { collection, addDoc } from "firebase/firestore";
 import TextArea from "antd/es/input/TextArea";
 import {Button, Form, Input,} from 'antd';
-import {Checkbox} from 'antd';
-import { Alert, Space } from 'antd';
-import './Home.css';
-import { collection, addDoc } from "firebase/firestore";
+import plama2 from './plamabottom.png';
+import React, {useState} from 'react';
+import plama from './plamatop.png';
+import logo from './logoo.png';
 import {db} from "./firebase";
+import {Checkbox} from 'antd';
+import {Rate} from 'antd';
+import './Home.css';
+
 export const Home = () => {
 
 const [email,setEmail]=useState("")
-    const [opinion,setOpinion]=useState("")
+    const [opinion,setOpinion]=useState(null)
+    const [hasOpinionError,setHasOpinionError]=useState(false)
     const [checkbox,setCheckbox]=useState(false)
+    const [hasCheckboxError,setHasCheckboxError]=useState(false)
     const [rate,setRate]=useState(0);
+
     return <div>
         <img className="plama2" src={plama2}/>
         <img className="plama" src={plama}/>
@@ -24,57 +27,52 @@ const [email,setEmail]=useState("")
             <div className="wszystko">
                 <p className="miejsce-na-opinie">To jest miejsce w którym możesz zostawić swoją opinię i nas ocenić</p>
                 <TextArea
-                    status={opinion ? "default" : "error"}
+                    style={{height: 140, marginBottom: 20,width: "100%" }}
+                    status={hasOpinionError ? "error" : "default" }
+                    volue={opinion}
+                    classname="area-opinia"
+                    placeholder="Opinia.."
+                    maxLength={120}
+                    showCount
                     onChange={(e)=>{
                         setOpinion(e.target.value)
                     }}
-                    volue={opinion}
-                    classname="area-opinia"
-                    showCount
-                    maxLength={120}
-                    style={{height: 140, marginBottom: 20,width: "100%" }}
-                    placeholder="Opinia.."
-
+                    id="opinion"
+                    name="opinion"
+                    required
                 />
-                <Alert
-                    message="Uzupełnij pole"
-                    type="error"
-                    showIcon
-                    action={
-                        <Space>
-                            <Button size="small" type="ghost">
-                            </Button>
-                        </Space>
-                    }
-                    closable
-                />
-
+                {
+                    hasOpinionError && <div style={{ color: 'red' }}> Musisz przesłać opinie </div>
+                }
                 <div className="wysrodkowanie">
                     <p className="Ocena">Ocena</p>
                     <Rate
+                        tooltips={["źła", "słaba", "średnia", "dobra", "bardzo dobra"]}
+                        style={{fontSize: 40}}
+                        className="rate"
+                        volue={rate}
+                        allowHalf
                         onChange={(e)=>{
                             setRate(e)
                         }}
-                        volue={rate}
-                        style={{fontSize: 40}}
-                        allowHalf
-                        tooltips={["źła", "słaba", "średnia", "dobra", "bardzo dobra"]}
-                        className="rate"
+                        id="rate"
+                        name="rate"
+                        required
                         Showcopywriting={1}/>
                 </div>
-               {/* <p className="Ocena">Ocena</p>*/}
                 <p className="tAdres-email">Adres email</p>
                 <Form.Item
                     className="email"
                     rules={[{type: 'email'}]}>
                     <Input
-                        onChange={(e)=>{
-                            setEmail(e.target.value)
-                        }}
+                        style={{size: 5, height: 50, width: "100%"}}
                         value={email}
                         className="input"
                         placeholder="Email"
-                        style={{size: 5, height: 50, width: "100%"}}
+                        onChange={(e)=>{
+                            setEmail(e.target.value)
+                        }}
+
                     />
                 </Form.Item>
                 <p className="tAdres-e-wymagany">Adres e-mail nie jest wymagany</p>
@@ -82,58 +80,43 @@ const [email,setEmail]=useState("")
                     onChange={(e)=>{
                         setCheckbox(e.target.checked)
                     }}
-                    status={checkbox ? "default" : "error"}
-                    className="checkbox"
+                    className={hasCheckboxError ? "checkbox checkbox-error" : "checkbox"}
                 >Kontynuując, wyrażasz zgodę na warunki opisane w dokumencie Warunki korzystania z serwisu i potwierdzasz
                     zapoznanie się z dokumentem Polityka prywatności
+                    {
+                        hasCheckboxError && <div style={{ color: 'red' }}> Musisz wyrazić zgodę </div>
+                    }
                 </Checkbox>
                 <Button
                     color="#022B3A"
                     className="buttom"
                     type="primary"
-                    onClick={async ()=>{
-                        const docRef = await addDoc(collection(db, "opinions"), {
-                            email,
-                            opinion,
-                            rate,
-                            date: (new Date()).toLocaleDateString("en-US"),
-                        });
-                    }}
                     style={{width: "100%"}}
+                    onClick={async ()=>{
+                        let isFormValid = opinion && checkbox;
+
+                        if(isFormValid) {
+                            const docRef = await addDoc(collection(db, "opinions"), {
+                                email,
+                                opinion,
+                                rate,
+                                date: (new Date()).toLocaleDateString("en-US"),
+                            });
+                            window.location.href="/thank-you/74e9d7a5-c6c1-41f2-8abf-6a0b49f14b6d";
+                        }
+                        else {
+                            if(!opinion) {
+                                setHasOpinionError(true);
+                            }
+                            if(!checkbox) {
+                                setHasCheckboxError(true);
+                            }
+                        }
+                    }}
                 >Wyślij</Button>
 
 
             </div>
-
         </div>
-  {/*      <Form.Item
-            className="email"
-            rules={[{type: 'email'}]}>
-            <Input
-                className="input"
-                placeholder="Email"
-                style={{size: 5, height: 50, width: 358}}
-            />
-            [</Form.Item>
-        <Button
-            color="#022B3A"
-            className="buttom"
-            type="primary"
-        >Wyślij</Button>
-        <p className="miejsce-na-opinie">To jest miejsce w którym możesz zostawić swoją opinię i nas ocenić</p>
-        <p className="Ocena">Ocena</p>
-        <p className="Adres-email">Adres email</p>
-        <p className="Adres-e-wymagany">Adres e-mail nie jest wymagany</p>
-        <Checkbox
-            className="checkbox"
-        >Kontynuując, wyrażasz zgodę na warunki opisane w dokumencie Warunki korzystania z serwisu i potwierdzasz
-            zapoznanie się z dokumentem Polityka prywatności
-        </Checkbox>
-        <Rate
-            style={{fontSize: 30}}
-            allowHalf
-            tooltips={["źle", "słabo", "średnio", "dobrze", "bardzo dobrze"]}
-            className="rate"
-            Showcopywriting={1}/>*/}
     </div>
 }
