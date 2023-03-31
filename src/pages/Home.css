@@ -4,21 +4,14 @@
     justify-content: center;
     margin: 30px;
     flex-direction: column;
-    gap: px;
 }
-.wszystko {
-
-}
-
 .checkbox-error .ant-checkbox .ant-checkbox-inner {
     border-color: red;
-
 }
-
 .wysrodkowanie {
+ margin-top: 20px;
     display: inline-flex;
     justify-content: center;
-
 }
 .company-logo {
     margin-top: 30px;
@@ -39,7 +32,6 @@
 }
 .email {
     margin: 0px;
-
 }
 .tAdres-email {
     margin-top: 20px;
@@ -49,7 +41,7 @@
 }
 .tAdres-e-wymagany {
     margin-top: 2px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 12px;
     color: #6E6E6E;
 }
@@ -70,7 +62,7 @@
     height: 55px;
     color: #ffffff;
     background-color: #022B3A;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .checkbox {
     display: flex;

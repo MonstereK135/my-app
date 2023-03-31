@@ -27,13 +27,11 @@ const [email,setEmail]=useState("")
             <div className="wszystko">
                 <p className="miejsce-na-opinie">To jest miejsce w którym możesz zostawić swoją opinię i nas ocenić</p>
                 <TextArea
-                    style={{height: 140, marginBottom: 20,width: "100%" }}
+                    style={{height: 140,width: "100%" }}
                     status={hasOpinionError ? "error" : "default" }
                     volue={opinion}
                     classname="area-opinia"
                     placeholder="Opinia.."
-                    maxLength={120}
-                    showCount
                     onChange={(e)=>{
                         setOpinion(e.target.value)
                     }}
@@ -42,7 +40,7 @@ const [email,setEmail]=useState("")
                     required
                 />
                 {
-                    hasOpinionError && <div style={{ color: 'red' }}> Musisz przesłać opinie </div>
+                    hasOpinionError && <div className="musisz" style={{ color: 'red', width: 180, margin: 0}}> Musisz przesłać opinie </div>
                 }
                 <div className="wysrodkowanie">
                     <p className="Ocena">Ocena</p>
@@ -72,7 +70,6 @@ const [email,setEmail]=useState("")
                         onChange={(e)=>{
                             setEmail(e.target.value)
                         }}
-
                     />
                 </Form.Item>
                 <p className="tAdres-e-wymagany">Adres e-mail nie jest wymagany</p>
@@ -114,8 +111,6 @@ const [email,setEmail]=useState("")
                         }
                     }}
                 >Wyślij</Button>
-
-
             </div>
         </div>
     </div>
