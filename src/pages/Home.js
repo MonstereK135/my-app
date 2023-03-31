@@ -84,7 +84,7 @@ const [email,setEmail]=useState("")
                 >Kontynuując, wyrażasz zgodę na warunki opisane w dokumencie Warunki korzystania z serwisu i potwierdzasz
                     zapoznanie się z dokumentem Polityka prywatności
                     {
-                        hasCheckboxError && <div style={{ color: 'red' }}> Musisz wyrazić zgodę </div>
+                        hasCheckboxError && <div style={{ color: 'red'}}> Musisz wyrazić zgodę </div>
                     }
                 </Checkbox>
                 <Button

@@ -4,9 +4,10 @@
     justify-content: center;
     margin: 30px;
     flex-direction: column;
+    gap: px;
 }
 .wszystko {
-    gap: 30px;
+
 }
 
 .checkbox-error .ant-checkbox .ant-checkbox-inner {
