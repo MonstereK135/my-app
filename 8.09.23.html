@@ -16,7 +16,7 @@
         <meta name="expires" content="data waznosci">
         <meta name="last-modified" content="data modyfikacji">
     </head>
-    <body  background="natalia.jpg"> <!--bgcolor="pink"-->
+    <body  background="natalia.jpg" link="green" vlink="teal" alink="aqua"> <!--bgcolor="pink"-->
         <!--kom-->
         <p> Jesteś </p> <!---->
         <p> SUPER </p>
@@ -99,7 +99,7 @@
         <p align="center"> <!-- align= left, cemter, right, middle, bottom-->
             <img src="../zdj/zdjecie bartka.jpg" alt="tekst alternatywny" > <!-- inny folder-->
         </p>
-        <video> </video>
+        <video src="../zdj/videoplayback.mp4" controls type="video/mp4"></video>
        <img src="natalia.jpg" alt="tekst alternatywny" width="100px" height="100px"> <!--zdjecie na stronie-->
        <!-- ####################################### TABELA #######################################-->
        <table border="1" cellpadding="10" cellspacing="15">
@@ -151,7 +151,7 @@
                </tr>
             </table>
      <!-- ####################################### zad 2 ####################################### -->
-     <table border="1" >
+     <table border="1"  >
         <tr>
             <td rowspan="3">1 i 3</td> <!--jedna cala rowspan-->
             <td> 1</td> 
@@ -167,17 +167,55 @@
             <!-- ####################################### zad 3 ####################################### -->
             <table border="1">
                 <tr>
-                    <td rowspan="2">1 i 2</td>
+                    <td rowspan="3" colspan="2">1 i 2</td> <!-- rowspan kolumna od gory to dolu -->
+                    <td>1</td>
+                    <td>2</rd>
+                    <td>3</td>
+                    <td rowspan="2">9</td>
+                </tr>
+                <tr>
+                    <td colspan="2">5 </td>
+                    <td>4</td>
                 </tr>
                 <tr>
                     <td>5 </td>
-                    <td>6 </td>
-                    <td>7</td>
+                    <td colspan="3" rowspan="2"> 6</td> <!--colspan -->
                 </tr>
                 <tr>
-                    <td colspan="3">3 i 4</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td colspan="6"> 10</td>
                 </tr>
                
             </table>
+            <!-- ###################################### linki ###################################### -->
+            <a href="1.html"> podstrona 1</a>
+            <a href="2.html"> podstrona 2</a>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_w3schools"> w3schools</a></li>
+                <li><a href="https://www.wp.pl"> wp.pl</a> </li>
+            </ul>
+            <a href="mailto:rozowyjednorozec135@gmail.com">Send email</a>
+            <a href="dane.zip"> dane - plik archiwalny</a>
+            <a href="firefox.exe"> plik instalacyjny</a>
+            <!-- <button onclick="document.location='default.a'">lepiej nie klikaj w to  -->
+            <a href="https://www.bing.com/search?q=bartek+kubiak&FORM=HDRSC1"><img src="zdjecie bartka.jpg" ></a>
+            <!-- ###################################### loginy,teksty,inputy ###################################### -->
+            <form>
+                <input type="text" name="lola"> 
+                <!-- value tresc , size dlugosc pola, maxlenght maksymalna ilosc, readonly tylko do odczytu, disabled blokada pola -->\
+                <p> podaj haslo:</p>
+                <input type="password" name="nazwa"> 
+            </form>
+
+            <form>
+                Prosty formularz logowania:<br><br>
+                Login: <input size="10" maxlength="4" value="login" type="text" name="login"><br><br>
+                Haslo:  <input size="10" value="haslo" type="password" name="haslo">
+            </form>
+        
     </body>
 </html>
