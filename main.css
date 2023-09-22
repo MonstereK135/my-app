@@ -8,17 +8,21 @@ p {
 	font-weight: bold;
 s
 }
+/* SELEKTOR */
 div {
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: "Times New Roman";
 font-size: larger;
 font-style: italic;
 font-variant: normal;
-font-weight: 200;
+font-weight: 500;
 background-color: beige;
 border-color:black;
 border-style: double;
 border-width:double;
-
+}
+div:hover {
+	color: purple;
+	transition: 5S;
 }
 h1 {
 	color: antiquewhite;
@@ -35,6 +39,10 @@ h2 {
 	background-repeat: initial;
 	background: scroll;
 }
-{
+a:visited {
+
+}
+
+a:active {
 
 }
