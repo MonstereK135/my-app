@@ -1,0 +1,40 @@
+body {
+	background-color: pink;
+	
+}
+p {
+	color: black;
+	font-family: "Courier New";
+	font-weight: bold;
+s
+}
+div {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: larger;
+font-style: italic;
+font-variant: normal;
+font-weight: 200;
+background-color: beige;
+border-color:black;
+border-style: double;
+border-width:double;
+
+}
+h1 {
+	color: antiquewhite;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	text-decoration: double;
+}
+h2 {
+	color:blue;
+	text-align: center;
+	background-attachment: fixed;
+	
+	background-repeat: initial;
+	background: scroll;
+}
+{
+
+}
